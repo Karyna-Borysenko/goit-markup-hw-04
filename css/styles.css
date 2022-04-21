@@ -233,6 +233,15 @@ img {
   margin-right: var(--main-gap);
 }
 
+.benefits-thumb {
+  margin-bottom: var(--main-gap);
+  padding: 25px 100px;
+
+  width: 270px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
 .benefits-secondary-title {
   margin-bottom: 10px;
 
