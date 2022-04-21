@@ -114,7 +114,6 @@ img {
 .header-link,
 .header-mail,
 .header-phone {
-  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -123,17 +122,27 @@ img {
   letter-spacing: 0.02em;
 }
 
-.header-link {
-  color: var(--main-color);
-}
-
 .current {
   color: var(--accent-color);
 }
 
+.header-link {
+  display: block;
+  color: var(--main-color);
+}
+
 .header-mail,
 .header-phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--body-color);
+}
+
+.header-mail-icon,
+.header-phone-icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .header-link:hover,
@@ -143,6 +152,7 @@ img {
 .header-mail:focus,
 .header-phone:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /*------------------------------------------------------------------index.html------------------------------------------------------------------*/
