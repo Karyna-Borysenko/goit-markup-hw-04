@@ -494,10 +494,16 @@ img {
 /*------------------------------------------------------------------Подвал сайта-Footer------------------------------------------------------------------*/
 
 .footer {
+  background-color: #2f303a;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.footer-contacts {
   padding-top: 60px;
   padding-bottom: 60px;
-
-  background-color: #2f303a;
 }
 
 .footer-logo {
@@ -540,5 +546,53 @@ img {
 .footer-item-phone:hover,
 .footer-item-mail:focus,
 .footer-item-phone:focus {
+  color: var(--used-color);
+}
+
+.footer-join {
+  margin-left: 70px;
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+
+.footer-join-title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--used-color);
+}
+
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-soc-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-soc-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff0e;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: var(--icon-color);
+}
+
+.footer-instagram-icon,
+.footer-twitter-icon,
+.footer-facebook-icon,
+.footer-linkedin-icon {
+  fill: currentColor;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--accent-color);
   color: var(--used-color);
 }
