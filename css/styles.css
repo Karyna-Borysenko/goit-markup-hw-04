@@ -7,6 +7,7 @@
   --border-color: #eeeeee;
   --icon-color: #afb1b8;
   --main-gap: 30px;
+  --title-gap: 50px;
 }
 
 body {
@@ -262,7 +263,7 @@ img {
 }
 
 .speciality-title {
-  margin-bottom: 50px;
+  margin-bottom: var(--title-gap);
 
   font-size: 36px;
   line-height: 1.17;
@@ -290,7 +291,7 @@ img {
 }
 
 .team-main-title {
-  margin-bottom: 50px;
+  margin-bottom: var(--title-gap);
 
   font-size: 36px;
   line-height: 1.17;
@@ -371,7 +372,7 @@ img {
 /*------------Секция Постоянные клиенты------------*/
 
 .clients-title {
-  margin-bottom: 50px;
+  margin-bottom: var(--title-gap);
 
   font-size: 36px;
   line-height: 1.17;
@@ -385,7 +386,7 @@ img {
 }
 
 .clients-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: var(--main-gap);
 }
 
 .clients-link {
@@ -417,7 +418,7 @@ img {
 
 .portfolio-filter {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: var(--title-gap);
   justify-content: center;
 }
 
@@ -474,6 +475,13 @@ img {
 
 .portfolio-card {
   max-width: 370px;
+  display: block;
+}
+
+.portfolio-card:hover,
+.portfolio-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .porfolio-secondary-title {
