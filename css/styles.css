@@ -124,13 +124,13 @@ img {
   letter-spacing: 0.02em;
 }
 
-.current {
-  color: var(--accent-color);
-}
-
 .header-link {
   display: block;
   color: var(--main-color);
+}
+
+.current {
+  color: var(--accent-color);
 }
 
 .header-mail,
@@ -589,7 +589,7 @@ img {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  color: var(--icon-color);
+  color: var(--used-color);
 }
 
 .footer-instagram-icon,
